@@ -1,17 +1,182 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 2 | @import "sass/intro.sass"
- *   |         ^^^^^^^^^^^^^^^^^
- *   '
- *   style.sass 2:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 2 \2502  @import \"sass/intro.sass\"\a   \2502          ^^^^^^^^^^^^^^^^^\a   \2575 \a   style.sass 2:9  root stylesheet";
+* {
+  box-sizing: border-box;
 }
+
+html {
+  background-color: white;
+  font-family: "Genos", sans-serif;
+  margin: 0 auto;
+  font-size: 25px;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 4.5vw;
+  max-width: 345px;
+  margin: 0 0 0 16px;
+}
+
+h1,
+.intro__follow {
+  z-index: 2;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.header__block,
+.intro__block,
+.header__block-links,
+.header__block-block {
+  display: flex;
+}
+
+.header__block {
+  justify-content: space-between;
+  align-content: center;
+  height: 80px;
+  overflow: visible;
+}
+.header__block-block {
+  justify-content: space-between;
+  width: 80%;
+}
+.header__logo {
+  height: 35px;
+}
+.header_links {
+  width: 100%;
+}
+.header__logo, .header__block-links {
+  align-self: center;
+}
+.header__block-links {
+  width: 100%;
+  justify-content: flex-end;
+}
+.header__link {
+  margin-right: 5%;
+}
+.header__link:last-child {
+  margin: 0;
+}
+.header__git, .header__inst, .header__youtube {
+  position: absolute;
+  z-index: 2;
+}
+.header__git {
+  top: 10%;
+  right: 60%;
+}
+.header__inst {
+  top: 32%;
+  right: 39%;
+}
+.header__youtube {
+  top: 52%;
+  right: 17%;
+}
+.header__media {
+  position: relative;
+  width: 262px;
+  height: 200px;
+}
+.header__media > a > img {
+  height: 40px;
+}
+.header__pol {
+  position: absolute;
+  z-index: 2;
+  max-width: 100%;
+  top: 0;
+  right: 0;
+}
+
+#header__yt {
+  height: 43px;
+}
+
+.header__logo,
+.intro__img {
+  margin-left: 15px;
+}
+
+.intro {
+  position: relative;
+}
+.intro__block {
+  position: relative;
+  width: 100%;
+  padding: 30px 0 0 0;
+  overflow: visible;
+}
+.intro__follow {
+  width: 21%;
+  height: 78px;
+  right: 7%;
+  top: 13%;
+}
+.intro__follow > p {
+  font-family: "Indie Flower", sans-serif;
+  font-size: 2vw;
+  margin: 0;
+}
+.intro__follow > p:last-child {
+  margin-left: 27%;
+}
+.intro__img {
+  max-height: 507px;
+  width: 25%;
+  margin-top: 12px;
+  z-index: 2;
+}
+.intro__quote-1, .intro__quote-2 {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 1.5vw;
+  margin: 0;
+}
+.intro__quote-1 {
+  bottom: 22%;
+  left: 26%;
+}
+.intro__quote-2 {
+  bottom: -5%;
+  right: 0;
+}
+.intro__arrow {
+  position: absolute;
+  z-index: 2;
+  max-width: 6%;
+  top: 6%;
+  right: 11%;
+  transform: scale(-1, 1) rotate(80deg);
+}
+.intro__round {
+  position: absolute;
+  z-index: 1;
+  max-width: 140%;
+  max-height: 114%;
+  right: 6%;
+  top: 25%;
+}
+.intro__quote-1, .intro__quote-2, .intro__follow {
+  position: absolute;
+  z-index: 2;
+}
+
+/*# sourceMappingURL=style.css.map */
