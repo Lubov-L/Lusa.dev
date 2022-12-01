@@ -234,7 +234,7 @@ h1,
 .main__header-p {
   font-size: 34px;
 }
-.main__header-p, .main__block, .main__about-block {
+.main__header-p__header-p, .main__header-p__block, .main__header-p__about-block {
   z-index: 2;
 }
 .main__about-header > p {
@@ -255,6 +255,7 @@ h1,
   right: 0;
 }
 .main__block {
+  z-index: 3;
   min-height: 700px;
   display: grid;
   grid-template-columns: 0.9fr 0.9fr 0.9fr;
@@ -294,6 +295,7 @@ h1,
   max-width: 185px;
 }
 .main__about-block {
+  z-index: 3;
   border: 1px solid rgba(121, 118, 123, 0.25);
   border-radius: 25px;
   background-color: white;
